@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.game-container {
+    text-align: center;
+}
+
+h1 {
+    color: #4a90e2;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+    gap: 5px;
+    margin: 20px auto;
+    width: 440px;
+    height: 440px;
+}
+
+.candy {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #357ab7;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .game-board {
+        grid-template-columns: repeat(6, 50px);
+        grid-template-rows: repeat(6, 50px);
+        width: 330px;
+        height: 330px;
+    }
+}
